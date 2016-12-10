@@ -1,8 +1,8 @@
 from django.conf.urls import url
 from django.contrib import admin
-from Management import views as Management_views
+from Management import views
 
 urlpatterns = [
-	url(r'^login/$', Management_views.Login.as_view(), name='login'),
-	
+	url(r'^login/$', views.Login.as_view(), name='login'),
+	url(r'^register/$', views.Register.as_view(), name='register'),
 ]
