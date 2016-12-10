@@ -1,0 +1,322 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Math",
+				"Matchday"
+			],
+			[
+				"Pos",
+				"PostAdmin"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Management/templates/base.html",
+			"settings":
+			{
+				"buffer_size": 1318,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Management/templates/Login/login.html",
+			"settings":
+			{
+				"buffer_size": 2343,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/F/Django_Projects/fwpl",
+		"/F/Django_Projects/fwpl/fwpl",
+		"/F/Django_Projects/fwpl/Management",
+		"/F/Django_Projects/fwpl/Management/templates",
+		"/F/Django_Projects/fwpl/Management/templates/Login"
+	],
+	"file_history":
+	[
+		"/F/Django_Projects/Check.py",
+		"/C/cygwin64/home/Rohan/WorksApp_Q2.cpp",
+		"/C/cygwin64/home/Rohan/Practice.cpp",
+		"/C/cygwin64/home/Rohan/Practice2.cpp",
+		"/F/Django_Projects/fwpl/Management/urls.py",
+		"/F/Django_Projects/fwpl/fwpl/urls.py",
+		"/F/Django_Projects/fwpl/Management/views.py",
+		"/F/Django_Projects/fwpl/Management/templates/Login/login.html",
+		"/F/Django_Projects/fwpl/Management/templates/base.html",
+		"/F/Django_Projects/fwpl/Management/forms.py",
+		"/C/cygwin64/home/Rohan/WorksApp_Q1.cpp",
+		"/C/cygwin64/home/Rohan/WorksApp_Q1_Online.cpp",
+		"/F/Django_Projects/fwpl/fwpl/settings.py",
+		"/F/Django_Projects/trial1/posts/urls.py",
+		"/F/Django_Projects/fwpl/Management/templates/login.html",
+		"/F/Django_Projects/fwpl/Management/models.py",
+		"/F/Django_Projects/fwpl/Seasons/admin.py",
+		"/F/Django_Projects/fwpl/Player/admin.py",
+		"/F/Django_Projects/fwpl/Performance/admin.py",
+		"/F/Django_Projects/fwpl/Performance/models.py",
+		"/F/Django_Projects/fwpl/Management/admin.py",
+		"/F/Django_Projects/fwpl/Test_Code.py",
+		"/F/Django_Projects/fwpl/Player/models.py",
+		"/F/Django_Projects/trial1/posts/admin.py",
+		"/F/Django_Projects/fwpl/Answer_Types/models.py",
+		"/F/Django_Projects/fwpl/AnswerSet_Types/models.py",
+		"/F/Django_Projects/fwpl/Answer_Types/admin.py",
+		"/F/Django_Projects/fwpl/Management/migrations/0004_remove_question_margin.py",
+		"/F/Django_Projects/fwpl/AnswerSet_Types/admin.py",
+		"/C/Python27/Scripts/django-admin.py",
+		"/F/Django_Projects/trial1/posts/forms.py",
+		"/F/Django_Projects/trial1/templates/index.html",
+		"/F/Django_Projects/trial1/templates/post_detail.html",
+		"/F/Django_Projects/trial1/templates/post_form.html",
+		"/F/Django_Projects/trial1/posts/views.py",
+		"/C/cygwin64/home/Rohan/first_try.cpp",
+		"/C/cygwin64/home/Rohan/WorkSAP_Q1.cpp",
+		"/F/Django_Projects/trial1/tryproject1/urls.py",
+		"/F/CPP_Programs/Test_Program.cpp",
+		"/F/Django_Projects/Python_Practice - Copy.py",
+		"/F/Django_Projects/Python_Practice.py",
+		"/F/Textbooks/MTech Project/Dynamic Analysis/Practice/Codes for Loop Simulations/SAP2000_Only_Pier.m",
+		"/F/Textbooks/MTech Project/Dynamic Analysis/Practice/Codes for Loop Simulations/SAP2000_Only_Pier.py",
+		"/F/Textbooks/MTech Project/Dynamic Analysis/Practice/Codes for Loop Simulations/SAP2000_OAPI_Example.py",
+		"/F/Django_Projects/trial1/tryproject1/settings.py",
+		"/F/Django_Projects/trial1/posts/models.py",
+		"/F/Django_Projects/trial1/posts/apps.py"
+	],
+	"find":
+	{
+		"height": 43.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			":",
+			"staticfiles",
+			"static_cdn",
+			"static",
+			"form",
+			"By_User",
+			"_",
+			"_Answer",
+			">\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"static",
+			"staticfiles",
+			"{% form %}",
+			"{{ form }}",
+			"By_Player",
+			"",
+			"_AnswerSet"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Management/templates/base.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1318,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1031,
+								1031
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 153.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Management/templates/Login/login.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2343,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								389,
+								389
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 765.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "fwpl_site.sublime-project",
+	"replace":
+	{
+		"height": 80.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 341.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
