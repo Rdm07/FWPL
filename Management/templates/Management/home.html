@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load material_form %}
+
+
+{% block title %}
+FWPL Home
+{% endblock %}
+
+{% block level_0 %}
+
+<nav class="nav-extended indigo darken-4">
+	<div class="nav-wrapper">
+		<ul class="tabs tabs-transparent">
+			<li class="tab"><a href="{% url 'register' %}">Home</a></li>
+			<li class="tab"><a href="{% url 'register' %}">Questions</a></li>
+			<li class="tab"><a href="{% url 'register' %}">Answer Keys</a></li>
+			<li class="tab"><a href="{% url 'register' %}">Matchday Points</a></li>
+			<li class="tab"><a href="{% url 'register' %}">My Answers</a></li>
+			<li class="tab"><a href="{% url 'register' %}">My Points</a></li>
+			<li class="tab"><a href="{% url 'register' %}">League Table</a></li>
+			<li class="tab"><a href="{% url 'register' %}">Sign Out</a></li>
+		</ul>
+	</div>
+</nav>
+
+{% endblock %}
+
+{% block level_1 %}
+
+<div class="row">
+	<div class="col 12">
+		<div>
+			<a href="{% url 'home' %}"
+				class="waves-effect waves-light btn btn-primary btn-lg grey darken-3">Home
+				<i class="material-icons right">mode_edit</i>
+			</a>
+			<a href="{% url 'home' %}"
+				class="waves-effect waves-light btn btn-primary btn-lg grey darken-3">Questions
+				<i class="material-icons right">mode_edit</i>
+			</a>
+			<a href="{% url 'home' %}"
+				class="waves-effect waves-light btn btn-primary btn-lg grey darken-3">Answer Keys
+				<i class="material-icons right">mode_edit</i>
+			</a>
+			<a href="{% url 'home' %}"
+				class="waves-effect waves-light btn btn-primary btn-lg grey darken-3">Matchday Points
+				<i class="material-icons right">mode_edit</i>
+			</a>
+			<a href="{% url 'home' %}"
+				class="waves-effect waves-light btn btn-primary btn-lg grey darken-3">My Questions
+				<i class="material-icons right">mode_edit</i>
+			</a>
+			<a href="{% url 'home' %}"
+				class="waves-effect waves-light btn btn-primary btn-lg grey darken-3">My Answers
+				<i class="material-icons right">mode_edit</i>
+			</a>
+			<a href="{% url 'home' %}"
+				class="waves-effect waves-light btn btn-primary btn-lg grey darken-3">My Points
+				<i class="material-icons right">mode_edit</i>
+			</a>
+			<a href="{% url 'home' %}"
+				class="waves-effect waves-light btn btn-primary btn-lg grey darken-3">League Table
+				<i class="material-icons right">mode_edit</i>
+			</a>
+			<a href="{% url 'logout' %}"
+				class="waves-effect waves-light btn btn-primary btn-lg grey darken-3">Sign Out
+				<i class="material-icons right">mode_edit</i>
+			</a>
+		</div>
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="col l6 m12">
+		<div class="card">
+			<div class="card-content">
+				<h5>Welcome {{user.first_name}} {{user.last_name}}</h5>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}

@@ -14,8 +14,10 @@ from django.template.loader import get_template
 from django.utils import timezone
 from django.utils.encoding import smart_str
 from django.views.generic import (View, ListView, TemplateView, DetailView, CreateView, UpdateView)
+
 from Management import forms
 from Management.forms import *
+from Player.models import Profile
 
 def handler400(request):
 	return render(request, '400.html')
@@ -41,6 +43,8 @@ class Login(View):
 	template_name = 'Management/login.html'
 
 	def get(self, request):
+		if request.user.is_authenticated():
+			return redirect('home')
 		form_my = LoginForm()
 		return render(request, self.template_name, dict(form=form_my))
 
@@ -52,15 +56,50 @@ class Login(View):
 			user = auth.authenticate(username=username, password=password)
 			if user is not None:
 				auth.login(request, user)
-				return redirect("next-page")
+				return redirect("home")
 			else:
 				return render(request, self.template_name, dict(form=form))
 		else:
 			return render(request, self.template_name, dict(form=form))
 
-class UserHome(View):
-	template_name = ''
+class Logout(View):
+	def get(self, request):
+		auth.logout(request)
+		return redirect('login')
 
+class Home(TemplateView):
+	template_name = 'Management/home.html'
 
-class Register(TemplateView):
-	template_name = ''
+	def get_context_data(self, **kwargs):
+		context = super(Home, self).get_context_data(**kwargs)
+		context['user'] = Profile.objects.get(username=self.request.user.username)
+		return context
+
+class Register(View):
+	template_name = 'Management/register.html'
+
+	def get(self, request):
+		form_my = ProfileForm()
+		return render(request, self.template_name, dict(form=form_my))
+
+	def post(self, request):
+		form = ProfileForm(request.POST)
+		if form.is_valid():
+			form.save()
+			return redirect('register-confirm')
+		else:
+			return render(request, self.template_name, dict(form=form))
+
+class RegisterConfirm(TemplateView):
+	template_name = 'Management/register_confirm.html'
+
+# class Questions(View):
+# 	template_name = 'Management/questions.html'
+
+# 	m = Matchday.objects.filter(day = 1)
+
+# 	q = Question.objects.filter(for_matchday = m)
+
+	# def get(self, request):
+	# 	qnumber = q.q_number
+	# 	qtext = q.q_text

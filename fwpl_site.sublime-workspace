@@ -4,6 +4,70 @@
 		"selected_items":
 		[
 			[
+				"tep",
+				"template_name"
+			],
+			[
+				"ren",
+				"return"
+			],
+			[
+				"Pr",
+				"Profile"
+			],
+			[
+				"form",
+				"Form"
+			],
+			[
+				"Profil",
+				"ProfileForm"
+			],
+			[
+				"C",
+				"CharField"
+			],
+			[
+				"User",
+				"UserCreationForm"
+			],
+			[
+				"f",
+				"forms"
+			],
+			[
+				"pas",
+				"password2"
+			],
+			[
+				"passw",
+				"password1"
+			],
+			[
+				"ma",
+				"max_length"
+			],
+			[
+				"a",
+				"a\tTag"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"te",
+				"template_name"
+			],
+			[
+				"Log",
+				"LoginForm"
+			],
+			[
+				"right",
+				"right-align"
+			],
+			[
 				"Math",
 				"Matchday"
 			],
@@ -16,21 +80,28 @@
 	"buffers":
 	[
 		{
-			"file": "Management/templates/base.html",
+			"file": "Management/views.py",
 			"settings":
 			{
-				"buffer_size": 1318,
+				"buffer_size": 2903,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Management/templates/Login/login.html",
+			"file": "/F/Django_Projects/CCD/CCD/jobportal/views_admin.py",
 			"settings":
 			{
-				"buffer_size": 2343,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"buffer_size": 44502,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/F/Django_Projects/CCD/CCD/jobportal/templates/jobportal/Admin/job_list.html",
+			"settings":
+			{
+				"buffer_size": 1995,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -67,36 +138,47 @@
 	"expanded_folders":
 	[
 		"/F/Django_Projects/fwpl",
-		"/F/Django_Projects/fwpl/fwpl",
 		"/F/Django_Projects/fwpl/Management",
-		"/F/Django_Projects/fwpl/Management/templates",
-		"/F/Django_Projects/fwpl/Management/templates/Login"
+		"/F/Django_Projects/fwpl/Seasons/migrations",
+		"/F/Django_Projects/CCD",
+		"/F/Django_Projects/CCD/CCD",
+		"/F/Django_Projects/CCD/CCD/jobportal",
+		"/F/Django_Projects/CCD/CCD/jobportal/templates",
+		"/F/Django_Projects/CCD/CCD/jobportal/templates/jobportal",
+		"/F/Django_Projects/CCD/CCD/jobportal/templates/jobportal/Admin"
 	],
 	"file_history":
 	[
+		"/F/Django_Projects/fwpl/Player/models.py",
+		"/F/Django_Projects/fwpl/Performance/models.py",
+		"/F/Django_Projects/fwpl/Management/models.py",
+		"/F/Django_Projects/fwpl/Seasons/models.py",
+		"/F/Django_Projects/fwpl/Management/templates/base.html",
+		"/F/Django_Projects/fwpl/Management/templates/Management/home.html",
+		"/F/Django_Projects/fwpl/Management/urls.py",
+		"/F/Django_Projects/fwpl/Management/forms.py",
+		"/F/Django_Projects/fwpl/Management/templates/Management/questions.html",
+		"/F/Django_Projects/fwpl/Management/views.py",
+		"/F/Django_Projects/fwpl/Management/templates/Management/login.html",
+		"/F/Django_Projects/fwpl/Management/templates/Management/register_confirm.html",
+		"/F/Django_Projects/fwpl/Management/templates/Management/register.html",
+		"/F/Django_Projects/fwpl/fwpl/urls.py",
+		"/F/Django_Projects/fwpl/fwpl/settings.py",
+		"/F/Django_Projects/fwpl/Management/templates/Management/base.html",
+		"/F/Django_Projects/fwpl/Management/templates/Login/login.html",
 		"/F/Django_Projects/Check.py",
 		"/C/cygwin64/home/Rohan/WorksApp_Q2.cpp",
 		"/C/cygwin64/home/Rohan/Practice.cpp",
 		"/C/cygwin64/home/Rohan/Practice2.cpp",
-		"/F/Django_Projects/fwpl/Management/urls.py",
-		"/F/Django_Projects/fwpl/fwpl/urls.py",
-		"/F/Django_Projects/fwpl/Management/views.py",
-		"/F/Django_Projects/fwpl/Management/templates/Login/login.html",
-		"/F/Django_Projects/fwpl/Management/templates/base.html",
-		"/F/Django_Projects/fwpl/Management/forms.py",
 		"/C/cygwin64/home/Rohan/WorksApp_Q1.cpp",
 		"/C/cygwin64/home/Rohan/WorksApp_Q1_Online.cpp",
-		"/F/Django_Projects/fwpl/fwpl/settings.py",
 		"/F/Django_Projects/trial1/posts/urls.py",
 		"/F/Django_Projects/fwpl/Management/templates/login.html",
-		"/F/Django_Projects/fwpl/Management/models.py",
 		"/F/Django_Projects/fwpl/Seasons/admin.py",
 		"/F/Django_Projects/fwpl/Player/admin.py",
 		"/F/Django_Projects/fwpl/Performance/admin.py",
-		"/F/Django_Projects/fwpl/Performance/models.py",
 		"/F/Django_Projects/fwpl/Management/admin.py",
 		"/F/Django_Projects/fwpl/Test_Code.py",
-		"/F/Django_Projects/fwpl/Player/models.py",
 		"/F/Django_Projects/trial1/posts/admin.py",
 		"/F/Django_Projects/fwpl/Answer_Types/models.py",
 		"/F/Django_Projects/fwpl/AnswerSet_Types/models.py",
@@ -138,6 +220,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"'Matchday_'+str(self.for_question.For_Matchday.MatchDay)+'_Question_'+str(self.for_question.Question_Number)",
+			"Rank",
+			"For_Question",
+			"Player",
+			"Answer",
+			"Bonus",
+			"By_Player",
+			"    ",
+			"First_Name",
 			":",
 			"staticfiles",
 			"static_cdn",
@@ -154,6 +245,15 @@
 		"regex": false,
 		"replace_history":
 		[
+			"str(self.for_question.for_matchday.day)+'_'+str(self.for_question.q_number)",
+			"rank",
+			"for_question",
+			"player",
+			"answer",
+			"bonus",
+			"by_player",
+			"",
+			"first_name",
 			"static",
 			"staticfiles",
 			"{% form %}",
@@ -176,49 +276,78 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Management/templates/base.html",
+					"file": "Management/views.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1318,
+						"buffer_size": 2903,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1031,
-								1031
+								2903,
+								2903
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 153.0,
+						"translation.y": 2250.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "Management/templates/Login/login.html",
+					"file": "/F/Django_Projects/CCD/CCD/jobportal/views_admin.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2343,
+						"buffer_size": 44502,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								389,
-								389
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4500.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/F/Django_Projects/CCD/CCD/jobportal/templates/jobportal/Admin/job_list.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1995,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -228,10 +357,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 765.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]

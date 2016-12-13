@@ -84,21 +84,21 @@ def GAAA_Score(Value1, Value2, Value3, Value4):
 '''
 
 class MatchdayPoint(models.Model):
-	Matchday = models.ForeignKey(Matchday, on_delete = models.CASCADE)
-	Player = models.ForeignKey(Profile, on_delete = models.CASCADE)
-	Question_1 = models.IntegerField(editable = False)
-	Question_2 = models.IntegerField(editable = False)
-	Question_3 = models.IntegerField(editable = False)
-	Question_4 = models.IntegerField(editable = False)
-	Question_5 = models.IntegerField(editable = False)
-	Question_6 = models.IntegerField(editable = False)
-	Question_7 = models.IntegerField(editable = False)
-	Question_8 = models.IntegerField(editable = False)
-	Question_9 = models.IntegerField(editable = False)
-	Question_10 = models.IntegerField(editable = False)
+	day = models.ForeignKey(Matchday, on_delete = models.CASCADE)
+	player = models.ForeignKey(Profile, on_delete = models.CASCADE)
+	question_1 = models.IntegerField(editable = False)
+	question_2 = models.IntegerField(editable = False)
+	question_3 = models.IntegerField(editable = False)
+	question_4 = models.IntegerField(editable = False)
+	question_5 = models.IntegerField(editable = False)
+	question_6 = models.IntegerField(editable = False)
+	question_7 = models.IntegerField(editable = False)
+	question_8 = models.IntegerField(editable = False)
+	question_9 = models.IntegerField(editable = False)
+	question_10 = models.IntegerField(editable = False)
 
 	def __unicode__(self):
-		return str(self.Player.First_Name)+'_Matchday_'+str(self.Matchday.MatchDay)
+		return str(self.player.first_name)+'_Matchday_'+str(self.Matchday.day)
 
 
 

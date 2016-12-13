@@ -5,19 +5,7 @@
 FWPL Login
 {% endblock %}
 
-<!-- {% block menu %}
-    <li>Login</li>
-</a>
-    <li>Register</li>
-</a>
-{% endblock %} -->
-
-<!-- {% block level_0 %} -->
-
-<!-- <div class="breadcrumbs">
-    <div>
-    </div>
-</div> -->
+{% block level_1 %}
 
 <div class="row">
     <div class="col s6 offset-m4 m4" style="margin-top: 10%;">
@@ -27,16 +15,6 @@ FWPL Login
                 <form method="POST" accept-charset="utf-8"
                       class="viewform">
                     {% csrf_token %}
-                    {% if error %}
-                        <div class="row">
-                            <div class=" card red lighten-5">
-                                <div class="red-text card-content">
-                                    <i class="mdi-alert-error"></i>
-                                    <p> {{error}}</p>
-                                </div>
-                            </div>
-                        </div>
-                    {% endif %}
                     {% form %}
                         {% part form.username prefix %}
                             <i class="material-icons prefix">account_box</i>
@@ -54,10 +32,10 @@ FWPL Login
                 </form>
             </div>
             <div class="right-align card-action" >
-                <button type="submit" name="_Register"
+                <a href="{% url 'register' %}" type="submit" name="_Register"
                     class="waves-effect waves-light btn btn-primary btn-lg grey darken-3">Sign Up
                     <i class="material-icons right">mode_edit</i>
-                </button>
+                </a>
             </div>
         </div>
     </div>

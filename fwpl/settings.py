@@ -26,6 +26,7 @@ SECRET_KEY = '0haaf(!&&mb1ndyxz@@hm4-@_*xt46=x#=kwwsml@@zto5!-i)'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+AUTH_USER_MODEL = 'Player.Profile'
 
 
 # Application definition
@@ -125,3 +126,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
