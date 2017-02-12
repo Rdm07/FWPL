@@ -1,6 +1,7 @@
 {% load static %}
 {% load staticfiles %}
 {% load material_form %}
+{% load common %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +19,7 @@
 <body style="background-color: #EAEAEA">
 	<nav class="nav-top indigo darken-4">
 		<div class = "container" style="font-size: 30px;">
-			<span class="nav-top white-text"><center>FUTBOL WORSHIPPERS PREDICTOR LEAGUE</center></span>
+			<a href="{% url 'home' %}" class="brand-logo center">FUTBOL WORSHIPPERS PREDICTOR LEAGUE</a>
 		</div>
 	</nav>
 
@@ -34,4 +35,5 @@
 </div>
     
 </body>
+
 </html>

@@ -8,4 +8,9 @@ urlpatterns = [
 	url(r'^register/$', views.Register.as_view(), name='register'),
 	url(r'^home/$', views.Home.as_view(), name='home'),
 	url(r'^register-confirm/$', views.RegisterConfirm.as_view(), name='register-confirm'),
+	url(r'^matchdays/(?P<pk>\d+)/$', views.Matchdays.as_view(), name='matchdays'),
+	url(r'^leaguetable/$', views.LeagueTable.as_view(), name='leaguetable'),
+	url(r'^matchdayperformance/(?P<pk>\d+)/$', views.MatchdayPerformance.as_view(), name='matchdayperformance'),
+	url(r'^submitanswer/(?P<pk>\d+)/$', views.SubmitAnswer.as_view(), name='submitanswer'),
+	url(r'^updateanswer/(?P<pk>\d+)/$', views.UpdateAnswer.as_view(), name='updateanswer'),
 ]

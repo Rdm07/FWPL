@@ -4,6 +4,126 @@
 		"selected_items":
 		[
 			[
+				"c",
+				"center-align"
+			],
+			[
+				"rank",
+				"ranks"
+			],
+			[
+				"user",
+				"user_all"
+			],
+			[
+				"zip",
+				"zip_list"
+			],
+			[
+				"p",
+				"p_given"
+			],
+			[
+				"po",
+				"points_user"
+			],
+			[
+				"points",
+				"points_user"
+			],
+			[
+				"ans",
+				"answer_list"
+			],
+			[
+				"pou",
+				"points_user"
+			],
+			[
+				"point",
+				"points_user"
+			],
+			[
+				"for",
+				"for_matchday"
+			],
+			[
+				"bonus",
+				"bonus_count"
+			],
+			[
+				"quest",
+				"for_question__for_matchday"
+			],
+			[
+				"for_",
+				"for_question"
+			],
+			[
+				"get_",
+				"get_matchday_page"
+			],
+			[
+				"get",
+				"get_model"
+			],
+			[
+				"q_",
+				"q_list"
+			],
+			[
+				"rigth",
+				"right-align"
+			],
+			[
+				"Q",
+				"Question"
+			],
+			[
+				"p_",
+				"p_list_aset"
+			],
+			[
+				"Ans",
+				"ScorelineAnswerSet"
+			],
+			[
+				"form_",
+				"form_list"
+			],
+			[
+				"card",
+				"card-content"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"form",
+				"form"
+			],
+			[
+				"f",
+				"from"
+			],
+			[
+				"q",
+				"q_list"
+			],
+			[
+				"pla",
+				"player_1"
+			],
+			[
+				"Ques",
+				"questions"
+			],
+			[
+				"context_",
+				"context_q"
+			],
+			[
 				"tep",
 				"template_name"
 			],
@@ -16,10 +136,6 @@
 				"Profile"
 			],
 			[
-				"form",
-				"Form"
-			],
-			[
 				"Profil",
 				"ProfileForm"
 			],
@@ -30,10 +146,6 @@
 			[
 				"User",
 				"UserCreationForm"
-			],
-			[
-				"f",
-				"forms"
 			],
 			[
 				"pas",
@@ -80,27 +192,11 @@
 	"buffers":
 	[
 		{
-			"file": "Management/views.py",
+			"file": "fwpl/urls.py",
 			"settings":
 			{
-				"buffer_size": 2903,
+				"buffer_size": 822,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/F/Django_Projects/CCD/CCD/jobportal/views_admin.py",
-			"settings":
-			{
-				"buffer_size": 44502,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/F/Django_Projects/CCD/CCD/jobportal/templates/jobportal/Admin/job_list.html",
-			"settings":
-			{
-				"buffer_size": 1995,
 				"line_ending": "Unix"
 			}
 		}
@@ -138,32 +234,58 @@
 	"expanded_folders":
 	[
 		"/F/Django_Projects/fwpl",
+		"/F/Django_Projects/fwpl/fwpl",
 		"/F/Django_Projects/fwpl/Management",
-		"/F/Django_Projects/fwpl/Seasons/migrations",
-		"/F/Django_Projects/CCD",
-		"/F/Django_Projects/CCD/CCD",
-		"/F/Django_Projects/CCD/CCD/jobportal",
-		"/F/Django_Projects/CCD/CCD/jobportal/templates",
-		"/F/Django_Projects/CCD/CCD/jobportal/templates/jobportal",
-		"/F/Django_Projects/CCD/CCD/jobportal/templates/jobportal/Admin"
+		"/F/Django_Projects/fwpl/Management/templates",
+		"/F/Django_Projects/fwpl/Management/templates/Management",
+		"/F/Django_Projects/fwpl/Player"
 	],
 	"file_history":
 	[
+		"/F/Django_Projects/fwpl/fwpl/settings.py",
+		"/F/Django_Projects/fwpl/Management/views.py",
+		"/F/Django_Projects/fwpl/Management/templates/Management/leaguetable.html",
+		"/F/Django_Projects/fwpl/Management/signals.py",
+		"/F/Django_Projects/fwpl/Management/templates/base.html",
+		"/F/Django_Projects/fwpl/test_rank.py",
+		"/F/Django_Projects/fwpl/Management/forms.py",
+		"/F/Django_Projects/fwpl/Management/urls.py",
+		"/F/Django_Projects/fwpl/Management/templates/Management/submitanswer.html",
+		"/F/Django_Projects/fwpl/Management/templates/Management/matchdays.html",
+		"/F/Django_Projects/fwpl/Management/templates/Management/matchdayperformance.html",
+		"/F/Django_Projects/fwpl/Management/models.py",
+		"/F/Django_Projects/fwpl/Management/apps.py",
+		"/F/Django_Projects/fwpl/Management/__init__.py",
+		"/F/Django_Projects/fwpl/static/css/datepicker.css",
+		"/F/Django_Projects/fwpl/Management/templatetags/common.py",
+		"/F/Django_Projects/fwpl/fwpl/urls.py",
+		"/F/Django_Projects/CCD-master/CCD/jobportal/forms.py",
+		"/C/Python27/Lib/site-packages/django/core/signals.py",
+		"/C/Python27/Lib/site-packages/django/dispatch/dispatcher.py",
+		"/C/Python27/Lib/site-packages/django/db/models/signals.py",
+		"/F/Django_Projects/fwpl/Management/templates/Management/submitanswer2.html",
+		"/F/Django_Projects/fwpl/Management/templates/Management/updateanswer.html",
+		"/F/Django_Projects/CCD-master/CCD/jobportal/views_company.py",
+		"/F/Django_Projects/fwpl/Management/templates/Management/register.html",
+		"/F/Django_Projects/fwpl/Management/templates/Management/login.html",
+		"/F/Django_Projects/fwpl/Management/templates/Management/home.html",
+		"/F/Django_Projects/CCD-master/CCD/jobportal/templates/jobportal/Company/job_create.html",
+		"/F/Django_Projects/fwpl/Management/templates/Management/register_confirm.html",
+		"/F/Django_Projects/CCD-master/CCD/jobportal/templates/jobportal/Student/profile_update.html",
+		"/F/Django_Projects/CCD-master/CCD/jobportal/views.py",
+		"/F/Django_Projects/fwpl/Management/templates/Management/myanswers.html",
+		"/F/Django_Projects/CCD-master/CCD/jobportal/templatetags/jobportal_tags.py",
+		"/F/Django_Projects/fwpl/Management/migrations/__init__.py",
+		"/F/Django_Projects/fwpl/Management/templates/Management/matchdaypoints.html",
+		"/F/Django_Projects/CCD-master/CCD/jobportal/templates/400.html",
+		"/F/Django_Projects/fwpl/Management/templates/Management/questions.html",
+		"/F/Django_Projects/fwpl/Management/templates/Management/answersets.html",
+		"/F/Django_Projects/fwpl/Management/templates/Management/answerset.html",
+		"/F/Django_Projects/CCD/CCD/jobportal/templates/jobportal/Admin/job_list.html",
+		"/F/Django_Projects/CCD/CCD/jobportal/views_admin.py",
 		"/F/Django_Projects/fwpl/Player/models.py",
 		"/F/Django_Projects/fwpl/Performance/models.py",
-		"/F/Django_Projects/fwpl/Management/models.py",
 		"/F/Django_Projects/fwpl/Seasons/models.py",
-		"/F/Django_Projects/fwpl/Management/templates/base.html",
-		"/F/Django_Projects/fwpl/Management/templates/Management/home.html",
-		"/F/Django_Projects/fwpl/Management/urls.py",
-		"/F/Django_Projects/fwpl/Management/forms.py",
-		"/F/Django_Projects/fwpl/Management/templates/Management/questions.html",
-		"/F/Django_Projects/fwpl/Management/views.py",
-		"/F/Django_Projects/fwpl/Management/templates/Management/login.html",
-		"/F/Django_Projects/fwpl/Management/templates/Management/register_confirm.html",
-		"/F/Django_Projects/fwpl/Management/templates/Management/register.html",
-		"/F/Django_Projects/fwpl/fwpl/urls.py",
-		"/F/Django_Projects/fwpl/fwpl/settings.py",
 		"/F/Django_Projects/fwpl/Management/templates/Management/base.html",
 		"/F/Django_Projects/fwpl/Management/templates/Login/login.html",
 		"/F/Django_Projects/Check.py",
@@ -220,6 +342,60 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"filter(for_question__for_matchday__day = pk)",
+			"sender, instance, **kwargs",
+			"sender, **kwargs",
+			"a.save()",
+			"a.points = -2",
+			"a.points = 0",
+			"a.points = 1",
+			"(points = 1)",
+			"a.points = 2",
+			"sender, instance, **kwargs",
+			"body",
+			".get",
+			"'bonus': forms.CheckboxInput(attrs={'class': 'filled-in'})",
+			"['for_question', 'by_player', 'points']",
+			"return self.fields['bonus'].disabled = True",
+			"self.fields['bonus'].disabled = True",
+			"post_save",
+			"CV",
+			"validation",
+			"(sender, **kwargs)",
+			"Submit",
+			"Submir",
+			"form",
+			"()",
+			"fields",
+			"form",
+			"question.answer_type",
+			"form",
+			"m_count",
+			"get",
+			"instance",
+			"alloct_points",
+			"player",
+			"\"",
+			"points = models.IntegerField(editable = False, blank = True, null = True)",
+			"points = models.IntegerField(editable = False, blank = True)",
+			"points = models.IntegerField(editable = False)",
+			"all()",
+			"by_player",
+			"for_question",
+			"_",
+			"points = models.IntegerField()",
+			"rank",
+			"player",
+			"myanswers",
+			"AnswerSet",
+			"S_",
+			"', '",
+			")\n",
+			"register",
+			"q_number",
+			"for m in m_list:\n\t\t# \tcontext[m.day] = 1",
+			"for m in m_list:\n\t\t# \tcontext[m.day]",
+			"register",
 			"'Matchday_'+str(self.for_question.For_Matchday.MatchDay)+'_Question_'+str(self.for_question.Question_Number)",
 			"Rank",
 			"For_Question",
@@ -245,6 +421,48 @@
 		"regex": false,
 		"replace_history":
 		[
+			"all()",
+			"sender, instance",
+			"sender, instance, **kwargs",
+			"",
+			"a.update(points = -2)",
+			"a.update(points = 0)",
+			"a.update(points = 1)",
+			"a.update(points = 2)",
+			"sender, **kwargs",
+			".filter",
+			"'bonus': forms.CheckboxInput(attrs={'class': 'filled-in', 'disabled': 'True'})",
+			"['for_question', 'by_player', 'points', 'bonus']",
+			"self.fields['bonus'].disabled = True\n\t\treturn self.fields['bonus'].disabled",
+			"return self.fields['bonus'].disabled = True",
+			"exclude = ['bonus']\n\t\treturn exclude",
+			"(sender, instance, **kwargs)",
+			"form_class",
+			"(request.POST)",
+			"request.POST",
+			"model",
+			"fields",
+			"q.answer_type",
+			"filter",
+			"a",
+			"allocate_points",
+			"rank",
+			"'",
+			"points = models.IntegerField(editable = False, default = 0)",
+			"points = models.IntegerField(editable = False, blank = True, null = True)",
+			"points = models.IntegerField(editable = False, blank = True)",
+			"filter(by_player = user)",
+			"by__player",
+			"for__question",
+			"__",
+			"points = models.IntegerField(editable = False)",
+			"self.rank",
+			"self.player",
+			"home",
+			"Answer",
+			"_",
+			"char(', ')",
+			"home",
 			"str(self.for_question.for_matchday.day)+'_'+str(self.for_question.q_number)",
 			"rank",
 			"for_question",
@@ -271,88 +489,29 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Management/views.py",
+					"file": "fwpl/urls.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2903,
+						"buffer_size": 822,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2903,
-								2903
+								787,
+								787
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2250.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/F/Django_Projects/CCD/CCD/jobportal/views_admin.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 44502,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4500.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/F/Django_Projects/CCD/CCD/jobportal/templates/jobportal/Admin/job_list.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1995,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -360,7 +519,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

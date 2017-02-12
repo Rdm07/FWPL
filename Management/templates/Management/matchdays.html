@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% load material_form %}
+{% load common %}
+
+
+{% block title %}
+FWPL Matchdays
+{% endblock %}
+
+{% block level_0 %}
+
+<nav class="nav-extended indigo darken-4">
+	<div class="nav-wrapper">
+		<ul class="left hide-on-med-and-down indigo darken-4">
+			<li><a href="{% url 'home' %}">Home</a></li>
+			<li><a href="{% url 'matchdays' 1 %}">Matchdays</a></li>
+			<li><a href="{% url 'matchdayperformance' 1 %}">Matchday Performance</a></li>
+			<li><a href="{% url 'leaguetable' %}">League Table</a></li>
+			<li><a href="{% url 'logout' %}">Sign Out</a></li>
+		</ul>
+	</div>
+</nav>
+
+{% endblock %}
+
+{% block level_1 %}
+
+<div class="row">
+</div>
+
+<div class="row">
+	<div class="col s12 m12 center-align">
+	<h5>Matchdays: </h5>
+		{% for n in m_all %}
+			{% if n.day == m.day %}
+				<a href="{% url 'matchdays' n.day %}" class="btn waves-effect waves-light disabled">{{n.day}}</a>
+			{% else %}
+				<a href="{% url 'matchdays' n.day %}" class="btn waves-effect waves-light">{{n.day}}</a>
+			{% endif %}
+		{% endfor %}
+	</div>
+</div>
+
+<div class="row">
+	<div class="col 4 m4 left-align">
+			{% if m_prv == 0 %}
+				<a href="{% url 'matchdays' m_prv %}" class="btn-flat waves-effect waves-light red disabled"><i class="large material-icons">skip_previous</i></a>
+			{% endif %}
+			{% if m_prv != 0 %}
+				<a href="{% url 'matchdays' m_prv %}" class="btn-flat waves-effect waves-light red"><i class="large material-icons">skip_previous</i></a>
+			{% endif %}
+	</div>
+	<div class="col 4 m4 center-align">
+		<h4><b>Matchday {{matchday.day}}</b></h4>
+		<h5>Total Points: {{points}}</h5>
+	</div>
+	<div class="col 4 m4 right-align">
+			{% if matchday.day == m_count %}
+				<a href="{% url 'matchdays' m_next %}" class="btn-flat waves-effect waves-light red disabled"><i class="large material-icons">skip_next</i></a>
+			{% endif %}
+			{% if matchday.day != m_count %}
+				<a href="{% url 'matchdays' m_next %}" class="btn-flat waves-effect waves-light red"><i class="large material-icons">skip_next</i></a>
+			{% endif %}
+	</div>
+</div>
+
+<div class="row">
+	<div class="col 12 m12">
+		{% for q in q_list %}
+			<div class="card">
+				<div class="card-content">
+					<h5><b>Question {{q.q_number}}:</b></h5>
+					<h6>{{q.q_text}}</h6>
+					{% with n=q.q_number %}
+					{% for a in a_list %}
+						{% if a.for_question == q %}
+							<br>
+							<p><b>Your Answer:</b> {{a.display}} {% if q.margin != 0 %}(Margin: {{q.margin}}) {% endif %} {% if a.bonus == True %}(<b>Bonus</b>) {% endif %}</p>
+							{% if matchday.deadline_passed == True %}
+								<p><b>Points:</b> {{a.points}}</p>
+							{% endif %}
+							
+							{% if matchday.deadline_passed == False %}
+								<div class="right-align" >
+									<a href="{% url 'updateanswer' q.id %}" type="submit" name="SubmitAnswer" class="waves-effect waves-light btn btn-primary btn-lg grey darken-3">Update<i class="material-icons right">mode_edit</i>
+									</a>
+								</div>
+							{% endif %}
+						{% endif %}
+					{% endfor %}
+					{% if exists|access:n == 0 %}
+						<br>
+						<p><b>Your Answer:</b> Did not Submit</p>
+						{% if matchday.deadline_passed == True %}
+							<p><b>Points:</b> 0</p>
+						{% endif %}
+						{% if matchday.deadline_passed == False %}
+							<div class="right-align" >
+								<a href="{% url 'submitanswer' q.id %}" type="submit" name="SubmitAnswer" class="waves-effect waves-light btn btn-primary btn-lg grey darken-3">Submit<i class="material-icons right">input</i>
+								</a>
+							</div>
+						{% endif %}
+					{% endif %}
+					{% if matchday.deadline_passed == True %}
+						{% for a in aset_list %}
+							{% if a.for_question == q %}
+								<p><b>Answer Key:</b> {{a.display}} {% if q.margin != 0 %}(Margin: {{q.margin}}) {% endif %}</p>
+							{% endif %}
+						{% endfor %}
+					{% endif %}
+					{% endwith %}
+				</div>
+			</div>
+		{% endfor %}
+	</li>
+</ul>
+
+{% endblock %}
+					

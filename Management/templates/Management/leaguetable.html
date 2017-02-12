@@ -3,7 +3,7 @@
 
 
 {% block title %}
-FWPL Home
+FWPL League Table
 {% endblock %}
 
 {% block level_0 %}
@@ -26,11 +26,36 @@ FWPL Home
 
 <div class="row">
 </div>
+
 <div class="row">
-	<div class="col l6 m12">
+	<div class="col 12 m12 left-align">
+		<h5><b>League Table</b></h5>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col 12 m12">
 		<div class="card">
 			<div class="card-content">
-				<h5>Welcome {{user.first_name}} {{user.last_name}}</h5>
+				<table class="bordered highlight centered responsive-table">
+					<thead>
+						<tr>
+							<th data-field="rank"><h5><b>Rank</b></h5></th>
+							<th data-field="player"><h5><b>Player</b></h5></th>
+							<th data-field="points"><h5><b>Points</b></h5></th>
+						</tr>
+					</thead>
+
+					<tbody>
+						{% for u, p, r in zip_list %}
+							<tr>							
+								<td><h5>{{r}}</h5></td>
+								<td><h5>{{u.first_name}} {{u.last_name}}</h5></td>
+								<td><h5>{{p}}</h5></td>
+							</tr>
+						{% endfor %}
+					</tbody>
+				</table>
 			</div>
 		</div>
 	</div>
