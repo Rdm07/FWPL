@@ -6,25 +6,38 @@
 FWPL Submit Answer
 {% endblock %}
 
-{% block level_0 %}
+{% block nav %}
 
-<nav class="nav-extended indigo darken-4">
-	<div class="nav-wrapper">
-		<ul class="left hide-on-med-and-down indigo darken-4">
-			<li><a href="{% url 'home' %}">Home</a></li>
-			<li><a href="{% url 'matchdays' 1 %}">Matchdays</a></li>
-			<li><a href="{% url 'matchdayperformance' 1 %}">Matchday Performance</a></li>
-			<li><a href="{% url 'leaguetable' %}">League Table</a></li>
-			<li><a href="{% url 'logout' %}">Sign Out</a></li>
-		</ul>
-	</div>
-</nav>
+	<nav class="top-nav indigo darken-4">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a class="page-title" style="font-size: 20px;">
+                    FW PREDICTOR LEAGUE
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <a href="#" data-activates="slide-out"
+           class="button-collapse top-nav full hide-on-large-only">
+            <i class="material-icons">menu</i>
+        </a>
+    </div>
+
+    <ul class="side-nav fixed" id="slide-out">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="{% url 'matchdays' 1 %}">Matchdays</a></li>
+        <li><a href="{% url 'matchdayperformance' 1 %}">Matchday Performance</a></li>
+        <li><a href="{% url 'leaguetable' %}">League Table</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="{% url 'logout' %}">Sign Out</a></li>
+	</ul>
 
 {% endblock %}
 
-{% block level_1 %}
-<div class="row">
-</div>
+{% block main %}
 
 <div class="row">
 	<div class="col 4 m4 left-align">
@@ -38,7 +51,7 @@ FWPL Submit Answer
 			<div class="card-content">
 				<form method="POST" accept-charset="utf-8" class="viewform">
 					{% csrf_token %}
-					<h5>Question: {{question.q_text}}</h5>
+					<h5>Question: {{question.q_text}}{% if question.margin != 0 %}(Margin: {{question.margin}}) {% endif %}</h5>
 					<h5>{% form %}
                     {% endform %}</h5>
 					<div class="right-align" >

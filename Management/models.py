@@ -47,7 +47,7 @@ class SinglePlayerTeamAnswer(models.Model):
 
 	@property
 	def display(self):
-		return self.answers
+		return self.answer
 
 	def __unicode__(self):
 		return str(self.by_player.first_name)

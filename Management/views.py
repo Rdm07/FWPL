@@ -191,27 +191,48 @@ class SubmitAnswer(LoginRequiredMixin, CreateView):
 			if a.bonus == True:
 				bonus_count = bonus_count + 1
 
-		if bonus_count == 0:
-			if question.answer_type.model == 'singleplayerteamanswer':
-				form_class = SPTAForm().__class__
-			elif question.answer_type.model == 'yesnoanswer':
-				form_class = YNAForm().__class__
-			elif question.answer_type.model == 'windrawloseanswer':
-				form_class = WDLAForm().__class__
-			elif question.answer_type.model == 'scorelineanswer':
-				form_class = SAForm().__class__
-			elif question.answer_type.model == 'singleintegeranswer':
-				form_class = SIAForm().__class__
-			elif question.answer_type.model == 'lineupanswer':
-				form_class = LAForm().__class__
-			elif question.answer_type.model == 'groupranksanswer':
-				form_class = GRAForm().__class__
-			elif question.answer_type.model == 'teamandvalueanswer':
-				form_class = TAVAForm().__class__
-			elif question.answer_type.model == 'goalandassistanswer':
-				form_class = GAAAForm().__class__
-			return form_class
-		
+		if question.bonus_allowed == True:
+			if bonus_count == 0:
+				if question.answer_type.model == 'singleplayerteamanswer':
+					form_class = SPTAForm().__class__
+				elif question.answer_type.model == 'yesnoanswer':
+					form_class = YNAForm().__class__
+				elif question.answer_type.model == 'windrawloseanswer':
+					form_class = WDLAForm().__class__
+				elif question.answer_type.model == 'scorelineanswer':
+					form_class = SAForm().__class__
+				elif question.answer_type.model == 'singleintegeranswer':
+					form_class = SIAForm().__class__
+				elif question.answer_type.model == 'lineupanswer':
+					form_class = LAForm().__class__
+				elif question.answer_type.model == 'groupranksanswer':
+					form_class = GRAForm().__class__
+				elif question.answer_type.model == 'teamandvalueanswer':
+					form_class = TAVAForm().__class__
+				elif question.answer_type.model == 'goalandassistanswer':
+					form_class = GAAAForm().__class__
+				return form_class
+			
+			else:
+				if question.answer_type.model == 'singleplayerteamanswer':
+					form_class = SPTAForm_NoBonus().__class__
+				elif question.answer_type.model == 'yesnoanswer':
+					form_class = YNAForm_NoBonus().__class__
+				elif question.answer_type.model == 'windrawloseanswer':
+					form_class = WDLAForm_NoBonus().__class__
+				elif question.answer_type.model == 'scorelineanswer':
+					form_class = SAForm_NoBonus().__class__
+				elif question.answer_type.model == 'singleintegeranswer':
+					form_class = SIAForm_NoBonus().__class__
+				elif question.answer_type.model == 'lineupanswer':
+					form_class = LAForm_NoBonus().__class__
+				elif question.answer_type.model == 'groupranksanswer':
+					form_class = GRAForm_NoBonus().__class__
+				elif question.answer_type.model == 'teamandvalueanswer':
+					form_class = TAVAForm_NoBonus().__class__
+				elif question.answer_type.model == 'goalandassistanswer':
+					form_class = GAAAForm_NoBonus().__class__
+				return form_class
 		else:
 			if question.answer_type.model == 'singleplayerteamanswer':
 				form_class = SPTAForm_NoBonus().__class__
@@ -283,7 +304,49 @@ class UpdateAnswer(LoginRequiredMixin, UpdateView):
 		queryset = question.answer_type.model_class().objects.all()
 		ans = queryset.get(for_question=question, by_player = user)
 
-		if (bonus_count == 1 and ans.bonus == False):
+		if question.bonus_allowed == True:
+			if (bonus_count == 1 and ans.bonus == False):
+				if question.answer_type.model == 'singleplayerteamanswer':
+					form_class = SPTAForm_NoBonus().__class__
+				elif question.answer_type.model == 'yesnoanswer':
+					form_class = YNAForm_NoBonus().__class__
+				elif question.answer_type.model == 'windrawloseanswer':
+					form_class = WDLAForm_NoBonus().__class__
+				elif question.answer_type.model == 'scorelineanswer':
+					form_class = SAForm_NoBonus().__class__
+				elif question.answer_type.model == 'singleintegeranswer':
+					form_class = SIAForm_NoBonus().__class__
+				elif question.answer_type.model == 'lineupanswer':
+					form_class = LAForm_NoBonus().__class__
+				elif question.answer_type.model == 'groupranksanswer':
+					form_class = GRAForm_NoBonus().__class__
+				elif question.answer_type.model == 'teamandvalueanswer':
+					form_class = TAVAForm_NoBonus().__class__
+				elif question.answer_type.model == 'goalandassistanswer':
+					form_class = GAAAForm_NoBonus().__class__
+				return form_class
+
+			else:
+				if question.answer_type.model == 'singleplayerteamanswer':
+					form_class = SPTAForm().__class__
+				elif question.answer_type.model == 'yesnoanswer':
+					form_class = YNAForm().__class__
+				elif question.answer_type.model == 'windrawloseanswer':
+					form_class = WDLAForm().__class__
+				elif question.answer_type.model == 'scorelineanswer':
+					form_class = SAForm().__class__
+				elif question.answer_type.model == 'singleintegeranswer':
+					form_class = SIAForm().__class__
+				elif question.answer_type.model == 'lineupanswer':
+					form_class = LAForm().__class__
+				elif question.answer_type.model == 'groupranksanswer':
+					form_class = GRAForm().__class__
+				elif question.answer_type.model == 'teamandvalueanswer':
+					form_class = TAVAForm().__class__
+				elif question.answer_type.model == 'goalandassistanswer':
+					form_class = GAAAForm().__class__
+				return form_class
+		else:
 			if question.answer_type.model == 'singleplayerteamanswer':
 				form_class = SPTAForm_NoBonus().__class__
 			elif question.answer_type.model == 'yesnoanswer':
@@ -302,27 +365,6 @@ class UpdateAnswer(LoginRequiredMixin, UpdateView):
 				form_class = TAVAForm_NoBonus().__class__
 			elif question.answer_type.model == 'goalandassistanswer':
 				form_class = GAAAForm_NoBonus().__class__
-			return form_class
-
-		else:
-			if question.answer_type.model == 'singleplayerteamanswer':
-				form_class = SPTAForm().__class__
-			elif question.answer_type.model == 'yesnoanswer':
-				form_class = YNAForm().__class__
-			elif question.answer_type.model == 'windrawloseanswer':
-				form_class = WDLAForm().__class__
-			elif question.answer_type.model == 'scorelineanswer':
-				form_class = SAForm().__class__
-			elif question.answer_type.model == 'singleintegeranswer':
-				form_class = SIAForm().__class__
-			elif question.answer_type.model == 'lineupanswer':
-				form_class = LAForm().__class__
-			elif question.answer_type.model == 'groupranksanswer':
-				form_class = GRAForm().__class__
-			elif question.answer_type.model == 'teamandvalueanswer':
-				form_class = TAVAForm().__class__
-			elif question.answer_type.model == 'goalandassistanswer':
-				form_class = GAAAForm().__class__
 			return form_class
 
 	def get_object(self, **kwargs):

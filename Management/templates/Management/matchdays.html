@@ -7,26 +7,39 @@
 FWPL Matchdays
 {% endblock %}
 
-{% block level_0 %}
+{% block nav %}
 
-<nav class="nav-extended indigo darken-4">
-	<div class="nav-wrapper">
-		<ul class="left hide-on-med-and-down indigo darken-4">
-			<li><a href="{% url 'home' %}">Home</a></li>
-			<li><a href="{% url 'matchdays' 1 %}">Matchdays</a></li>
-			<li><a href="{% url 'matchdayperformance' 1 %}">Matchday Performance</a></li>
-			<li><a href="{% url 'leaguetable' %}">League Table</a></li>
-			<li><a href="{% url 'logout' %}">Sign Out</a></li>
-		</ul>
-	</div>
-</nav>
+	<nav class="top-nav indigo darken-4">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a class="page-title" style="font-size: 20px;">
+                    FW PREDICTOR LEAGUE
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <a href="#" data-activates="slide-out"
+           class="button-collapse top-nav full hide-on-large-only">
+            <i class="material-icons">menu</i>
+        </a>
+    </div>
+
+    <ul class="side-nav fixed" id="slide-out">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="{% url 'matchdays' 1 %}">Matchdays</a></li>
+        <li><a href="{% url 'matchdayperformance' 1 %}">Matchday Performance</a></li>
+        <li><a href="{% url 'leaguetable' %}">League Table</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="{% url 'logout' %}">Sign Out</a></li>
+	</ul>
+
 
 {% endblock %}
 
-{% block level_1 %}
-
-<div class="row">
-</div>
+{% block main %}
 
 <div class="row">
 	<div class="col s12 m12 center-align">
@@ -42,7 +55,7 @@ FWPL Matchdays
 </div>
 
 <div class="row">
-	<div class="col 4 m4 left-align">
+	<div class="col 2 m2 left-align">
 			{% if m_prv == 0 %}
 				<a href="{% url 'matchdays' m_prv %}" class="btn-flat waves-effect waves-light red disabled"><i class="large material-icons">skip_previous</i></a>
 			{% endif %}
@@ -50,11 +63,11 @@ FWPL Matchdays
 				<a href="{% url 'matchdays' m_prv %}" class="btn-flat waves-effect waves-light red"><i class="large material-icons">skip_previous</i></a>
 			{% endif %}
 	</div>
-	<div class="col 4 m4 center-align">
-		<h4><b>Matchday {{matchday.day}}</b></h4>
-		<h5>Total Points: {{points}}</h5>
+	<div class="col 8 m8 center-align">
+		<h5><b>Matchday {{matchday.day}}: {% if matchday.deadline_passed == False %}Deadline (GMT): {{matchday.deadline}}{% endif %}</b></h5>
+		<h5>{% if matchday.deadline_passed == True %}Total Points: {{points}}{% endif %}</h5>
 	</div>
-	<div class="col 4 m4 right-align">
+	<div class="col 2 m2 right-align">
 			{% if matchday.day == m_count %}
 				<a href="{% url 'matchdays' m_next %}" class="btn-flat waves-effect waves-light red disabled"><i class="large material-icons">skip_next</i></a>
 			{% endif %}
@@ -70,7 +83,7 @@ FWPL Matchdays
 			<div class="card">
 				<div class="card-content">
 					<h5><b>Question {{q.q_number}}:</b></h5>
-					<h6>{{q.q_text}}</h6>
+					<h6>{{q.q_text}} {% if q.margin != 0 %}(Margin: {{q.margin}}){% endif %}</h6>
 					{% with n=q.q_number %}
 					{% for a in a_list %}
 						{% if a.for_question == q %}
@@ -116,4 +129,3 @@ FWPL Matchdays
 </ul>
 
 {% endblock %}
-					

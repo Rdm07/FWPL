@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '0haaf(!&&mb1ndyxz@@hm4-@_*xt46=x#=kwwsml@@zto5!-i)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['fwpl.pythonanywhere.com']
 AUTH_USER_MODEL = 'Player.Profile'
 
 
@@ -80,8 +80,11 @@ WSGI_APPLICATION = 'fwpl.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'fwpl$fwpl_db',
+        'USER': 'fwpl',
+        'PASSWORD': 'Drmm5138',
+        'HOST': 'fwpl.mysql.pythonanywhere-services.com',
     }
 }
 
